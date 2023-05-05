@@ -1,0 +1,6 @@
+train: ../durian/images/
+val: ../durian/images/
+# number of classes
+nc: 5
+# class names
+names: [ 'A','B','C','D','E']

@@ -1,0 +1,59 @@
+https://karnyong.medium.com/%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-ai-%E0%B8%87%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%86-%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%88%E0%B8%B1%E0%B8%9A%E0%B8%A7%E0%B8%B1%E0%B8%95%E0%B8%96%E0%B8%B8%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-yolov5-%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88-2-%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%88%E0%B8%B3%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%99-colab-428541e909e3
+
+
+
+https://github.com/Mongkol29/worm-detct.git
+%cd /content/yolov5
+!python train.py --img 640 --epochs 40 --data data_yaml.yaml --cfg ./models/yolov5s.yaml --weights 'yolov5s.pt'
+
+
+https://github.com/Mongkol29/melon-datasets.git
+
+d:> colab
+echo "# melon-datasets" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Mongkol29/melon_data.git
+git push -u origin main
+
+
+!git clone https://github.com/Mongkol29/new_melon.git
+
+!git clone https://github.com/ultralytics/yolov5 
+cd/content/yolov5
+pip install -qr requirements.txt
+
+cd /content
+!git clone https://github.com/Mongkol29/new_melon.git
+
+*************go to data load data_yaml.yaml
+cd yolov5
+!python train.py --img 640 --epochs 40 --data data_yaml.yaml --cfg ./models/yolov5s.yaml --weights 'yolov5s.pt'
+
+
+
+d:> colab_durian
+echo "# durian" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Mongkol29/durian.git
+git push -u origin main
+
+
+
+
+!git clone https://github.com/ultralytics/yolov5 
+cd/content/yolov5
+pip install -qr requirements.txt
+
+cd /content
+!git clone https://github.com/Mongkol29/durian.git
+
+*************go to data load data_yaml.yaml
+
+cd yolov5
+!python train.py --img 640 --epochs 150 --data data_yaml.yaml --cfg ./models/yolov5s.yaml --weights 'yolov5s.pt'
